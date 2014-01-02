@@ -9,9 +9,10 @@ class Person
     String cellPhone
     String position
     Date added = new Date()
-    
+    ProgramInvolvement involvement
     Address address
     String notes
+    String recordStatus
     
     static hasOne = [org: Organization]
     
@@ -22,9 +23,9 @@ class Person
         firstName blank: false
         lastName blank: false
         email Email: true
-        officePhone size: 7..11, blank: false
-        org nullable: true
         position nullable: true
+        org nullable: true
+        officePhone size: 7..11, blank: false        
         cellPhone size: 7..11
         
         

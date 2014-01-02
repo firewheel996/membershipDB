@@ -16,6 +16,7 @@ grails.project.dependency.resolution = {
     inherits("global") {
         // specify dependency exclusions here; for example, uncomment this to disable ehcache:
         // excludes 'ehcache'
+        // excludes 'xercesImpl'  might be needed for excel export plugin
     }
     log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
@@ -59,5 +60,7 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.3.2"
 
         compile ':cache:1.0.1'
+        
+        runtime ":excel-export:0.1.10"
     }
 }

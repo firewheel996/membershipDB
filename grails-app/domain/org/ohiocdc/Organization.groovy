@@ -12,6 +12,7 @@ class Organization
     Date added = new Date()
     String geography
     String notes
+    ProgramInvolvement involvement
      
     static hasMany = [memberships: Membership, contacts: Person]
 
