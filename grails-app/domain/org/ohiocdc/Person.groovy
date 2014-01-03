@@ -2,6 +2,8 @@ package org.ohiocdc
 
 class Person 
 {
+    static searchable = true
+    
     String firstName
     String lastName
     String email

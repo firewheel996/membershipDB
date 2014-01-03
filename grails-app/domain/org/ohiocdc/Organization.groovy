@@ -2,6 +2,8 @@ package org.ohiocdc
 
 class Organization 
 {
+    static searchable = true
+    
     String name
     String phone
     String fax

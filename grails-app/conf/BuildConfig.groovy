@@ -37,6 +37,7 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
+        //mavenRepo "http://repo.grails.org/grails/core" // For compass
     }
 
     dependencies {
@@ -62,5 +63,7 @@ grails.project.dependency.resolution = {
         compile ':cache:1.0.1'
         
         runtime ":excel-export:0.1.10"
+        
+        compile ":elasticsearch-gorm:0.0.2.1"
     }
 }
