@@ -10,12 +10,11 @@ class User {
     String accessLevel
 
     static constraints = {
-        '*' blank: false
-        userName()
-        password password: true
-        email Email: true
-        firstName()
-        lastName()
-        accessLevel inList: ["Read-Only", "Modify", "Add", "Delete", "Admin"]
+        userName blank: false
+        password password: true, blank: false
+        email Email: true, blank: false
+        firstName blank: false
+        lastName blank: false
+        accessLevel inList: ["Read-Only", "Modify", "Add", "Delete", "Admin"], blank: false
     }
 }
